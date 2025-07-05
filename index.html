@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مولّد صور للنشر الإخباري</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qumrah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>مولّد صور - مـن الـقورية</h1>
+        <select id="newsType">
+            <option value="urgent">خبر عاجل</option>
+            <option value="trending">متداول</option>
+            <option value="death">وفاة</option>
+            <option value="announcement">تعميم</option>
+        </select>
+        <textarea id="newsText" placeholder="اكتب النص الإخباري هنا..."></textarea>
+        <button onclick="generateImage()">توليد الصورة</button>
+        <div id="resultArea">
+            <canvas id="newsCanvas" width="1080" height="1080"></canvas>
+            <button onclick="downloadImage()">تحميل الصورة</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
